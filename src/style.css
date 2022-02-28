@@ -14,6 +14,7 @@ button {
   padding: 8px;
   background-color: gray;
   color: white;
+  cursor: pointer;
 }
 
 li {
@@ -64,4 +65,20 @@ li {
 
 #add-btn {
   width: min-content;
+  margin-left: auto;
+}
+
+/* desktop version */
+@media screen and (min-width: 700px) {
+  .container {
+    display: grid;
+    grid-template-columns: minmax(210px, 600px) minmax(210px, 500px);
+    gap: 40px;
+    padding: 0 16vw;
+    justify-content: space-between;
+  }
+
+  #add-score {
+    justify-content: start;
+  }
 }
