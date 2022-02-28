@@ -1,0 +1,30 @@
+{
+  "name": "webpack-config",
+  "version": "1.0.0",
+  "description": "A simple yet powerful webpack boilerplate, which can later use as a starting point in your projects.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leopiresgoss/webpack-config.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leopiresgoss/webpack-config/issues"
+  },
+  "homepage": "https://github.com/leopiresgoss/webpack-config#readme",
+  "devDependencies": {
+    "css-loader": "^6.6.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.69.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}
