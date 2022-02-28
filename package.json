@@ -1,7 +1,7 @@
 {
-  "name": "webpack-config",
+  "name": "leaderboard",
   "version": "1.0.0",
-  "description": "A simple yet powerful webpack boilerplate, which can later use as a starting point in your projects.",
+  "description": "The leaderboard website displays scores submitted by different players. It also allows you to submit your score.",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
