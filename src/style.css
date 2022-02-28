@@ -1,3 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 body {
-  background: #F5F6F7;
+  background: #f5f6f7;
+  padding: 8vh 4vw;
+}
+
+button {
+  height: 24px;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.scores {
+  border: 2px solid black;
+}
+
+.scores li {
+  padding-left: 8px;
+}
+
+.scores li:nth-child(even) {
+  background-color: rgb(219, 219, 219);
 }
