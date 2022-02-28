@@ -11,7 +11,9 @@ body {
 }
 
 button {
-  height: 24px;
+  padding: 8px;
+  background-color: gray;
+  color: white;
 }
 
 li {
@@ -22,6 +24,8 @@ li {
   margin-top: 40px;
 }
 
+/* section recent-scores */
+
 .section-head {
   display: flex;
   align-items: center;
@@ -29,6 +33,7 @@ li {
 }
 
 .scores {
+  margin-top: 24px;
   border: 2px solid black;
 }
 
@@ -38,4 +43,25 @@ li {
 
 .scores li:nth-child(even) {
   background-color: rgb(219, 219, 219);
+}
+
+/* recent add-score */
+
+#add-score {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: 200px;
+  justify-content: center;
+}
+
+#add-score form {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#add-btn {
+  width: min-content;
 }
