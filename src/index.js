@@ -6,13 +6,18 @@ import Display from './modules/display.js';
 const gameName = 'Leader Game';
 const game = new Game(gameName);
 const display = new Display();
+
 const form = document.querySelector('form');
+const refreshBtn = document.querySelector('.section-head button');
+
+const resfreshList = async () => {
+  const scores = await game.getScores();
+  display.displayScores(scores.result);
+};
 
 const render = async () => {
   await game.start();
-  // todo add event listener to add score
-  const scores = await game.getScores();
-  display.displayScores(scores.result);
+  await resfreshList();
 };
 
 const addScore = async (e) => {
@@ -26,3 +31,4 @@ const addScore = async (e) => {
 
 render();
 form.addEventListener('submit', addScore);
+refreshBtn.addEventListener('click', resfreshList);
