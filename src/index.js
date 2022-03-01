@@ -20,4 +20,15 @@ const startNewGame = async (gameName) => {
   return newGame;
 };
 
-startNewGame(gameName);
+// get id from new game
+const getId = async () => {
+  const game = await startNewGame(gameName);
+  const findId = game.result.match(/(\w+)\sadded\.$/);
+
+  // the id is at the first
+  if (findId !== null && findId[1]) return findId[1];
+
+  return undefined;
+};
+
+getId();
