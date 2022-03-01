@@ -1,86 +1,16 @@
 import './style.css';
+import Game from './modules/game.js';
 
 // create a new game
-const gameName = 'Leader Gamer';
-const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
+const gameName = 'Leader Game';
 
-const startNewGame = async (gameName) => {
-  const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
-  const res = await fetch(requestURL, {
-    method: 'POST',
-    body: JSON.stringify({
-      name: `${gameName}`,
-    }),
-    headers: {
-      'Content-type': 'application/json; charset=UTF-8',
-    },
-  });
+const render = async (Game) => {
+  const game = new Game(gameName);
 
-  const newGame = await res.json();
-
-  return newGame;
+  await game.start();
+  // todo add event listener to add score
+  await game.addScoreToGame();
+  const scores = await game.getScores();
 };
 
-// get id from new game
-const getId = async () => {
-  const game = await startNewGame(gameName);
-  const findId = game.result.match(/(\w+)\sadded\.$/);
-
-  // the id is at the first
-  if (findId !== null && findId[1]) return findId[1];
-
-  return undefined;
-};
-
-// add to score to game
-const addScoreToGame = async (id) => {
-  const url = `${requestURL}${id}/scores`;
-
-  // first test
-  let res = await fetch(url, {
-    method: 'POST',
-    body: JSON.stringify({
-      user: 'Juan',
-      score: 500,
-    }),
-    headers: {
-      'Content-type': 'application/json; charset=UTF-8',
-    },
-  });
-
-  // second test
-  res = await fetch(url, {
-    method: 'POST',
-    body: JSON.stringify({
-      user: 'Lisa',
-      score: 100,
-    }),
-    headers: {
-      'Content-type': 'application/json; charset=UTF-8',
-    },
-  });
-
-  const result = await res.json();
-  return result;
-};
-
-const getScores = async (id) => {
-  const url = `${requestURL}${id}/scores`;
-
-  // first test
-  let res = await fetch(url, {
-    method: 'GET',
-  });
-
-  res = await res.json();
-
-  return res;
-};
-
-const render = async () => {
-  const id = await getId();
-  await addScoreToGame(id);
-  await getScores(id);
-};
-
-render();
+render(Game);
