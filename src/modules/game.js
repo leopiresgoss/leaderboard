@@ -41,7 +41,7 @@ export default class Game {
       method: 'POST',
       body: JSON.stringify({
         user,
-        score,
+        score: Number(score),
       }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
