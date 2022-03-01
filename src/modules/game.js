@@ -33,35 +33,22 @@ export default class Game {
   };
 
   // add to score to game
-  addScoreToGame = async () => {
+  addScoreToGame = async (user, score) => {
     const url = `${this.requestURL}${this.id}/scores`;
 
     // first test
-    let res = await fetch(url, {
+    const res = await fetch(url, {
       method: 'POST',
       body: JSON.stringify({
-        user: 'Juan',
-        score: 500,
+        user,
+        score,
       }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
     });
 
-    // second test
-    res = await fetch(url, {
-      method: 'POST',
-      body: JSON.stringify({
-        user: 'Lisa',
-        score: 100,
-      }),
-      headers: {
-        'Content-type': 'application/json; charset=UTF-8',
-      },
-    });
-
-    const result = await res.json();
-    return result;
+    return res.json();
   };
 
   getScores = async () => {
