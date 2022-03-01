@@ -33,9 +33,7 @@ const getId = async () => {
 };
 
 // add to score to game
-const addScoreToGame = async () => {
-  const id = await getId();
-
+const addScoreToGame = async (id) => {
   const url = `${requestURL}${id}/scores`;
 
   // first test
@@ -66,4 +64,23 @@ const addScoreToGame = async () => {
   return result;
 };
 
-addScoreToGame();
+const getScores = async (id) => {
+  const url = `${requestURL}${id}/scores`;
+
+  // first test
+  let res = await fetch(url, {
+    method: 'GET',
+  });
+
+  res = await res.json();
+
+  return res;
+};
+
+const render = async () => {
+  const id = await getId();
+  await addScoreToGame(id);
+  await getScores(id);
+};
+
+render();
