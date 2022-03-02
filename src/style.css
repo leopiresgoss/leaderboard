@@ -41,6 +41,11 @@ button {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.72em;
   letter-spacing: 0.094em;
+  transition: all 1s;
+}
+
+button:hover {
+  box-shadow: none;
 }
 
 li {
