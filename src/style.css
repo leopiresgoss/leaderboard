@@ -6,8 +6,24 @@
 }
 
 body {
-  background: #f5f6f7;
   padding: 8vh 4vw;
+  height: 100vh;
+  background-image:
+    linear-gradient(
+      to bottom,
+      #1a2537,
+      #262b49,
+      #3b2e58,
+      #562f62,
+      #742b65,
+      #882b69,
+      #9c296c,
+      #b0276c,
+      #c02c77,
+      #d13182,
+      #e1378d,
+      #f23c98
+    );
 }
 
 button {
@@ -19,6 +35,12 @@ button {
 
 li {
   list-style: none;
+}
+
+section {
+  background: rgba(235, 236, 240, 0.92);
+  padding: 16px;
+  border-radius: 8px;
 }
 
 .container {
