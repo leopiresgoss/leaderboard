@@ -132,6 +132,10 @@ section {
     margin-left: 10%;
   }
 
+  h2 {
+    font-size: 2em;
+  }
+
   button {
     font-size: 1em;
     width: 130px;
