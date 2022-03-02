@@ -11,7 +11,7 @@
 body {
   font-family: 'Sifonn', sans-serif;
   padding: 8vh 4vw;
-  height: 100vh;
+  height: 100%;
   background-image:
     linear-gradient(
       to bottom,
@@ -45,6 +45,12 @@ button {
 li {
   list-style: none;
   font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
 }
 
 input {
@@ -81,14 +87,17 @@ section {
 .scores {
   margin-top: 24px;
   border: 2px solid black;
+  border-radius: 8px;
 }
 
 .scores li {
   padding-left: 8px;
+  font-size: 1em;
+  line-height: 32px;
 }
 
 .scores li:nth-child(even) {
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(197 197 197 / 20%);
 }
 
 /* recent add-score */
