@@ -1,6 +1,13 @@
 export default class Display {
   displayScores = (scores) => {
     const scoresList = document.querySelector('.scores');
+
+    if (scores.length === 0) {
+      scoresList.style.display = 'none';
+    } else {
+      scoresList.style.display = 'block';
+    }
+
     scores = this.#orderScores(scores);
     scoresList.innerHTML = '';
     scores.forEach((score) => {
