@@ -1,3 +1,6 @@
+@import url('http://fonts.cdnfonts.com/css/sifonn');
+@import url('http://fonts.cdnfonts.com/css/montserrat');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,6 +9,7 @@
 }
 
 body {
+  font-family: 'Sifonn', sans-serif;
   padding: 8vh 4vw;
   height: 100vh;
   background-image:
@@ -27,14 +31,20 @@ body {
 }
 
 button {
+  border-radius: 24px;
+  box-shadow: 4px 4px 8px 1px rgb(0 0 0 / 20%);
   padding: 8px;
-  background-color: gray;
+  background-color: #9c296c;
   color: white;
   cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72em;
+  letter-spacing: 0.094em;
 }
 
 li {
   list-style: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
 section {
