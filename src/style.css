@@ -47,6 +47,17 @@ li {
   font-family: 'Montserrat', sans-serif;
 }
 
+input {
+  height: 32px;
+  padding: 8px;
+  font-size: 1em;
+  border-radius: 8px;
+}
+
+input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+}
+
 section {
   background: rgba(235, 236, 240, 0.92);
   padding: 16px;
@@ -63,6 +74,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .scores {
@@ -86,6 +99,7 @@ section {
   gap: 4px;
   height: 200px;
   justify-content: center;
+  margin-top: 20px;
 }
 
 #add-score form {
