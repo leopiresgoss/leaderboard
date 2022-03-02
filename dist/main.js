@@ -116,7 +116,27 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_game_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/game.js */ \"./src/modules/game.js\");\n/* harmony import */ var _modules_display_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/display.js */ \"./src/modules/display.js\");\n\n\n\n\n// create a new game\nconst gameName = 'Leader Game';\nconst game = new _modules_game_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"](gameName);\nconst display = new _modules_display_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]();\n\nconst form = document.querySelector('form');\nconst refreshBtn = document.querySelector('.section-head button');\n\nconst resfreshList = async () => {\n  const scores = await game.getScores();\n  display.displayScores(scores.result);\n};\n\nconst render = async () => {\n  await game.start();\n  await resfreshList();\n};\n\nconst addScore = async (e) => {\n  e.preventDefault();\n  const user = document.getElementById('name');\n  const score = document.getElementById('score');\n  await game.addScoreToGame(user.value, score.value);\n  user.value = '';\n  score.value = '';\n};\n\nrender();\nform.addEventListener('submit', addScore);\nrefreshBtn.addEventListener('click', resfreshList);\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/display.js":
+/*!********************************!*\
+  !*** ./src/modules/display.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Display)\n/* harmony export */ });\nclass Display {\n  displayScores = (scores) => {\n    const scoresList = document.querySelector('.scores');\n    scores = this.#orderScores(scores);\n    scoresList.innerHTML = '';\n    scores.forEach((score) => {\n      const li = document.createElement('li');\n      li.textContent = `${score.user}: ${score.score}`;\n      scoresList.appendChild(li);\n    });\n  };\n\n  #orderScores = (scores) => scores.sort((a, b) => b.score - a.score)\n}\n\n//# sourceURL=webpack://leaderboard/./src/modules/display.js?");
+
+/***/ }),
+
+/***/ "./src/modules/game.js":
+/*!*****************************!*\
+  !*** ./src/modules/game.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Game)\n/* harmony export */ });\nclass Game {\n  constructor(gameName) {\n    this.requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';\n    this.gameName = gameName;\n  }\n\n  #startNewGame = async (gameName) => {\n    const res = await fetch(this.requestURL, {\n      method: 'POST',\n      body: JSON.stringify({\n        name: `${gameName}`,\n      }),\n      headers: {\n        'Content-type': 'application/json; charset=UTF-8',\n      },\n    });\n\n    const newGame = await res.json();\n\n    return newGame;\n  };\n\n  // get id from new game\n  start = async () => {\n    const game = await this.#startNewGame(this.gameName);\n    const findId = game.result.match(/(\\w+)\\sadded\\.$/);\n    const id = findId[1];\n\n    // the id is at the first\n    if (findId !== null && id) {\n      this.id = id;\n    }\n  };\n\n  // add to score to game\n  addScoreToGame = async (user, score) => {\n    const url = `${this.requestURL}${this.id}/scores`;\n\n    // first test\n    const res = await fetch(url, {\n      method: 'POST',\n      body: JSON.stringify({\n        user,\n        score: Number(score),\n      }),\n      headers: {\n        'Content-type': 'application/json; charset=UTF-8',\n      },\n    });\n\n    return res.json();\n  };\n\n  getScores = async () => {\n    const url = `${this.requestURL}${this.id}/scores`;\n\n    let res = await fetch(url, {\n      method: 'GET',\n    });\n\n    res = await res.json();\n    return res;\n  };\n}\n\n//# sourceURL=webpack://leaderboard/./src/modules/game.js?");
 
 /***/ })
 
