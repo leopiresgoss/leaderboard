@@ -1,3 +1,6 @@
+@import url('http://fonts.cdnfonts.com/css/sifonn');
+@import url('http://fonts.cdnfonts.com/css/montserrat');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,19 +9,71 @@
 }
 
 body {
-  background: #f5f6f7;
+  font-family: 'Sifonn', sans-serif;
   padding: 8vh 4vw;
+  height: 100%;
+  min-height: 100vh;
+  background-image:
+    linear-gradient(
+      to bottom,
+      #1a2537,
+      #262b49,
+      #3b2e58,
+      #562f62,
+      #742b65,
+      #882b69,
+      #9c296c,
+      #b0276c,
+      #c02c77,
+      #d13182,
+      #e1378d,
+      #f23c98
+    );
 }
 
 button {
+  border-radius: 24px;
+  box-shadow: 4px 4px 8px 1px rgb(0 0 0 / 20%);
   padding: 8px;
-  background-color: gray;
+  background-color: #9c296c;
   color: white;
   cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72em;
+  letter-spacing: 0.094em;
+  transition: all 1s;
+}
+
+button:hover {
+  box-shadow: none;
 }
 
 li {
   list-style: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+}
+
+input {
+  height: 32px;
+  padding: 8px;
+  font-size: 1em;
+  border-radius: 8px;
+}
+
+input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  background: rgba(235, 236, 240, 0.92);
+  padding: 16px;
+  border-radius: 8px;
 }
 
 .container {
@@ -31,19 +86,24 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .scores {
   margin-top: 24px;
   border: 2px solid black;
+  border-radius: 8px;
 }
 
 .scores li {
   padding-left: 8px;
+  font-size: 1em;
+  line-height: 32px;
 }
 
 .scores li:nth-child(even) {
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(197 197 197 / 20%);
 }
 
 /* recent add-score */
@@ -54,6 +114,7 @@ li {
   gap: 4px;
   height: 200px;
   justify-content: center;
+  margin-top: 20px;
 }
 
 #add-score form {
@@ -70,6 +131,26 @@ li {
 
 /* desktop version */
 @media screen and (min-width: 700px) {
+  h1 {
+    text-align: start;
+    font-size: 4em;
+    margin-left: 10%;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  button {
+    font-size: 1em;
+    width: 130px;
+    height: 48px;
+  }
+
+  li {
+    font-size: 1.2em;
+  }
+
   .container {
     display: grid;
     grid-template-columns: minmax(210px, 600px) minmax(210px, 500px);
@@ -80,5 +161,12 @@ li {
 
   #add-score {
     justify-content: start;
+    padding: 24px;
+    height: min-content;
+    margin-top: 0;
+  }
+
+  #add-score button {
+    width: 130px;
   }
 }
