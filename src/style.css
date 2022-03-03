@@ -1,5 +1,5 @@
 /* @import url('http://fonts.cdnfonts.com/css/sifonn'); */
-@import url('http://fonts.cdnfonts.com/css/montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
 @font-face {
   font-family: 'Sifonn Pro';
@@ -59,6 +59,7 @@ button:hover {
 li {
   list-style: none;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 h1 {
