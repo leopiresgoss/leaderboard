@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(http://fonts.cdnfonts.com/css/sifonn);\"]);\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(http://fonts.cdnfonts.com/css/montserrat);\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\n  box-sizing: border-box;\\n  margin: 0;\\n  padding: 0;\\n  border: 0;\\n}\\n\\nbody {\\n  font-family: 'Sifonn', sans-serif;\\n  padding: 8vh 4vw;\\n  height: 100%;\\n  min-height: 100vh;\\n  background-image:\\n    linear-gradient(\\n      to bottom,\\n      #1a2537,\\n      #262b49,\\n      #3b2e58,\\n      #562f62,\\n      #742b65,\\n      #882b69,\\n      #9c296c,\\n      #b0276c,\\n      #c02c77,\\n      #d13182,\\n      #e1378d,\\n      #f23c98\\n    );\\n}\\n\\nbutton {\\n  border-radius: 24px;\\n  box-shadow: 4px 4px 8px 1px rgb(0 0 0 / 20%);\\n  padding: 8px;\\n  background-color: #9c296c;\\n  color: white;\\n  cursor: pointer;\\n  font-family: 'Montserrat', sans-serif;\\n  font-size: 0.72em;\\n  letter-spacing: 0.094em;\\n  transition: all 1s;\\n}\\n\\nbutton:hover {\\n  box-shadow: none;\\n}\\n\\nli {\\n  list-style: none;\\n  font-family: 'Montserrat', sans-serif;\\n}\\n\\nh1 {\\n  color: #fff;\\n  font-size: 2em;\\n  text-align: center;\\n}\\n\\ninput {\\n  height: 32px;\\n  padding: 8px;\\n  font-size: 1em;\\n  border-radius: 8px;\\n}\\n\\ninput::placeholder {\\n  font-family: 'Montserrat', sans-serif;\\n}\\n\\nsection {\\n  background: rgba(235, 236, 240, 0.92);\\n  padding: 16px;\\n  border-radius: 8px;\\n}\\n\\n.container {\\n  margin-top: 40px;\\n}\\n\\n/* section recent-scores */\\n\\n.section-head {\\n  display: flex;\\n  align-items: center;\\n  justify-content: space-between;\\n  flex-wrap: wrap;\\n  gap: 12px;\\n}\\n\\n.scores {\\n  margin-top: 24px;\\n  border: 2px solid black;\\n  border-radius: 8px;\\n}\\n\\n.scores li {\\n  padding-left: 8px;\\n  font-size: 1em;\\n  line-height: 32px;\\n}\\n\\n.scores li:nth-child(even) {\\n  background-color: rgb(197 197 197 / 20%);\\n}\\n\\n/* recent add-score */\\n\\n#add-score {\\n  display: flex;\\n  flex-direction: column;\\n  gap: 4px;\\n  height: 200px;\\n  justify-content: center;\\n  margin-top: 20px;\\n}\\n\\n#add-score form {\\n  margin-top: 24px;\\n  display: flex;\\n  flex-direction: column;\\n  gap: 8px;\\n}\\n\\n#add-btn {\\n  width: min-content;\\n  margin-left: auto;\\n}\\n\\n/* desktop version */\\n@media screen and (min-width: 700px) {\\n  h1 {\\n    text-align: start;\\n    font-size: 4em;\\n    margin-left: 10%;\\n  }\\n\\n  h2 {\\n    font-size: 2em;\\n  }\\n\\n  button {\\n    font-size: 1em;\\n    width: 130px;\\n    height: 48px;\\n  }\\n\\n  li {\\n    font-size: 1.2em;\\n  }\\n\\n  .container {\\n    display: grid;\\n    grid-template-columns: minmax(210px, 600px) minmax(210px, 500px);\\n    gap: 40px;\\n    padding: 0 16vw;\\n    justify-content: space-between;\\n  }\\n\\n  #add-score {\\n    justify-content: start;\\n    padding: 24px;\\n    height: min-content;\\n    margin-top: 0;\\n  }\\n\\n  #add-score button {\\n    width: 130px;\\n  }\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://leaderboard/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);\n// Imports\n\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./SIFONN_PRO.woff2 */ \"./src/SIFONN_PRO.woff2\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./SIFONN_PRO.woff */ \"./src/SIFONN_PRO.woff\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(http://fonts.cdnfonts.com/css/montserrat);\"]);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"/* @import url('http://fonts.cdnfonts.com/css/sifonn'); */\\n\\n@font-face {\\n  font-family: 'Sifonn Pro';\\n  src: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \") format('woff2'),\\n    url(\" + ___CSS_LOADER_URL_REPLACEMENT_1___ + \") format('woff');\\n  font-weight: normal;\\n  font-style: normal;\\n}\\n\\n* {\\n  box-sizing: border-box;\\n  margin: 0;\\n  padding: 0;\\n  border: 0;\\n}\\n\\nbody {\\n  font-family: 'Sifonn Pro', sans-serif;\\n  padding: 8vh 4vw;\\n  height: 100%;\\n  min-height: 100vh;\\n  background-image:\\n    linear-gradient(\\n      to bottom,\\n      #1a2537,\\n      #262b49,\\n      #3b2e58,\\n      #562f62,\\n      #742b65,\\n      #882b69,\\n      #9c296c,\\n      #b0276c,\\n      #c02c77,\\n      #d13182,\\n      #e1378d,\\n      #f23c98\\n    );\\n}\\n\\nbutton {\\n  border-radius: 24px;\\n  box-shadow: 4px 4px 8px 1px rgb(0 0 0 / 20%);\\n  padding: 8px;\\n  background-color: #9c296c;\\n  color: white;\\n  cursor: pointer;\\n  font-family: 'Montserrat', sans-serif;\\n  font-size: 0.72em;\\n  letter-spacing: 0.094em;\\n  transition: all 1s;\\n}\\n\\nbutton:hover {\\n  box-shadow: none;\\n}\\n\\nli {\\n  list-style: none;\\n  font-family: 'Montserrat', sans-serif;\\n}\\n\\nh1 {\\n  color: #fff;\\n  font-size: 2em;\\n  text-align: center;\\n}\\n\\ninput {\\n  height: 32px;\\n  padding: 8px;\\n  font-size: 1em;\\n  border-radius: 8px;\\n}\\n\\ninput::placeholder {\\n  font-family: 'Montserrat', sans-serif;\\n}\\n\\nsection {\\n  background: rgba(235, 236, 240, 0.92);\\n  padding: 16px;\\n  border-radius: 8px;\\n}\\n\\n.container {\\n  margin-top: 40px;\\n}\\n\\n/* section recent-scores */\\n\\n.section-head {\\n  display: flex;\\n  align-items: center;\\n  justify-content: space-between;\\n  flex-wrap: wrap;\\n  gap: 12px;\\n}\\n\\n.scores {\\n  margin-top: 24px;\\n  border: 2px solid black;\\n  border-radius: 8px;\\n}\\n\\n.scores li {\\n  padding-left: 8px;\\n  font-size: 1em;\\n  line-height: 32px;\\n}\\n\\n.scores li:nth-child(even) {\\n  background-color: rgb(197 197 197 / 20%);\\n}\\n\\n/* recent add-score */\\n\\n#add-score {\\n  display: flex;\\n  flex-direction: column;\\n  gap: 4px;\\n  height: 200px;\\n  justify-content: center;\\n  margin-top: 20px;\\n}\\n\\n#add-score form {\\n  margin-top: 24px;\\n  display: flex;\\n  flex-direction: column;\\n  gap: 8px;\\n}\\n\\n#add-btn {\\n  width: min-content;\\n  margin-left: auto;\\n}\\n\\n/* desktop version */\\n@media screen and (min-width: 700px) {\\n  h1 {\\n    text-align: start;\\n    font-size: 4em;\\n    margin-left: 10%;\\n  }\\n\\n  h2 {\\n    font-size: 2em;\\n  }\\n\\n  button {\\n    font-size: 1em;\\n    width: 130px;\\n    height: 48px;\\n  }\\n\\n  li {\\n    font-size: 1.2em;\\n  }\\n\\n  .container {\\n    display: grid;\\n    grid-template-columns: minmax(210px, 600px) minmax(210px, 500px);\\n    gap: 40px;\\n    padding: 0 16vw;\\n    justify-content: space-between;\\n  }\\n\\n  #add-score {\\n    justify-content: start;\\n    padding: 24px;\\n    height: min-content;\\n    margin-top: 0;\\n  }\\n\\n  #add-score button {\\n    width: 130px;\\n  }\\n}\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://leaderboard/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module) => {
 
 eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\nmodule.exports = function (cssWithMappingToString) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = \"\";\n      var needLayer = typeof item[5] !== \"undefined\";\n\n      if (item[4]) {\n        content += \"@supports (\".concat(item[4], \") {\");\n      }\n\n      if (item[2]) {\n        content += \"@media \".concat(item[2], \" {\");\n      }\n\n      if (needLayer) {\n        content += \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\");\n      }\n\n      content += cssWithMappingToString(item);\n\n      if (needLayer) {\n        content += \"}\";\n      }\n\n      if (item[2]) {\n        content += \"}\";\n      }\n\n      if (item[4]) {\n        content += \"}\";\n      }\n\n      return content;\n    }).join(\"\");\n  }; // import a list of modules into the list\n\n\n  list.i = function i(modules, media, dedupe, supports, layer) {\n    if (typeof modules === \"string\") {\n      modules = [[null, modules, undefined]];\n    }\n\n    var alreadyImportedModules = {};\n\n    if (dedupe) {\n      for (var k = 0; k < this.length; k++) {\n        var id = this[k][0];\n\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n\n    for (var _k = 0; _k < modules.length; _k++) {\n      var item = [].concat(modules[_k]);\n\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        continue;\n      }\n\n      if (typeof layer !== \"undefined\") {\n        if (typeof item[5] === \"undefined\") {\n          item[5] = layer;\n        } else {\n          item[1] = \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\").concat(item[1], \"}\");\n          item[5] = layer;\n        }\n      }\n\n      if (media) {\n        if (!item[2]) {\n          item[2] = media;\n        } else {\n          item[1] = \"@media \".concat(item[2], \" {\").concat(item[1], \"}\");\n          item[2] = media;\n        }\n      }\n\n      if (supports) {\n        if (!item[4]) {\n          item[4] = \"\".concat(supports);\n        } else {\n          item[1] = \"@supports (\".concat(item[4], \") {\").concat(item[1], \"}\");\n          item[4] = supports;\n        }\n      }\n\n      list.push(item);\n    }\n  };\n\n  return list;\n};\n\n//# sourceURL=webpack://leaderboard/./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    options = {};\n  }\n\n  if (!url) {\n    return url;\n  }\n\n  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    url = url.slice(1, -1);\n  }\n\n  if (options.hash) {\n    url += options.hash;\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]|(%20)/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, \"\\\\n\"), \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack://leaderboard/./node_modules/css-loader/dist/runtime/getUrl.js?");
 
 /***/ }),
 
@@ -138,6 +148,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Game)\n/* harmony export */ });\nclass Game {\n  constructor(gameName) {\n    this.requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';\n    this.gameName = gameName;\n  }\n\n  #startNewGame = async (gameName) => {\n    const res = await fetch(this.requestURL, {\n      method: 'POST',\n      body: JSON.stringify({\n        name: `${gameName}`,\n      }),\n      headers: {\n        'Content-type': 'application/json; charset=UTF-8',\n      },\n    });\n\n    const newGame = await res.json();\n\n    return newGame;\n  };\n\n  // get id from new game\n  start = async () => {\n    const game = await this.#startNewGame(this.gameName);\n    const findId = game.result.match(/(\\w+)\\sadded\\.$/);\n    const id = findId[1];\n\n    // the id is at the first\n    if (findId !== null && id) {\n      this.id = id;\n    }\n  };\n\n  // add to score to game\n  addScoreToGame = async (user, score) => {\n    const url = `${this.requestURL}${this.id}/scores`;\n\n    // first test\n    const res = await fetch(url, {\n      method: 'POST',\n      body: JSON.stringify({\n        user,\n        score: Number(score),\n      }),\n      headers: {\n        'Content-type': 'application/json; charset=UTF-8',\n      },\n    });\n\n    return res.json();\n  };\n\n  getScores = async () => {\n    const url = `${this.requestURL}${this.id}/scores`;\n\n    let res = await fetch(url, {\n      method: 'GET',\n    });\n\n    res = await res.json();\n    return res;\n  };\n}\n\n//# sourceURL=webpack://leaderboard/./src/modules/game.js?");
 
+/***/ }),
+
+/***/ "./src/SIFONN_PRO.woff":
+/*!*****************************!*\
+  !*** ./src/SIFONN_PRO.woff ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"4d76fc5122e9badf1da8.woff\";\n\n//# sourceURL=webpack://leaderboard/./src/SIFONN_PRO.woff?");
+
+/***/ }),
+
+/***/ "./src/SIFONN_PRO.woff2":
+/*!******************************!*\
+  !*** ./src/SIFONN_PRO.woff2 ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"8e8aa1099fb29a659ca1.woff2\";\n\n//# sourceURL=webpack://leaderboard/./src/SIFONN_PRO.woff2?");
+
 /***/ })
 
 /******/ 	});
@@ -166,6 +196,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -191,6 +224,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -205,6 +250,52 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /************************************************************************/
