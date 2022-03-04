@@ -102,7 +102,7 @@ section {
 
 .scores {
   display: none;
-  height: 100px;
+  max-height: 100px;
   overflow-y: scroll;
   margin-top: 24px;
   border: 2px solid black;
@@ -203,7 +203,7 @@ section {
   #add-score {
     justify-content: start;
     padding: 24px;
-    height: min-content;
+    height: 100%;
     margin-top: 0;
   }
 
