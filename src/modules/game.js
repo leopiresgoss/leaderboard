@@ -4,6 +4,22 @@ export default class Game {
     this.gameName = gameName;
   }
 
+  // store Id to localStorage
+  #saveId = () => {
+    const game = {
+      id: this.id,
+      gameName: this.gameName,
+    };
+
+    localStorage.setItem('leaderboardGame', JSON.stringify(game));
+  }
+
+  // get Id from localStorage
+  #getId = () => {
+    const game = JSON.parse(localStorage.getItem('leaderboardGame'));
+    return game || false;
+  }
+
   #startNewGame = async (gameName) => {
     const res = await fetch(this.requestURL, {
       method: 'POST',
@@ -16,19 +32,25 @@ export default class Game {
     });
 
     const newGame = await res.json();
-
     return newGame;
   };
 
   // get id from new game
   start = async () => {
-    const game = await this.#startNewGame(this.gameName);
-    const findId = game.result.match(/(\w+)\sadded\.$/);
-    const id = findId[1];
+    let game = this.#getId();
+    if (!game) {
+      game = await this.#startNewGame(this.gameName);
+      const findId = game.result.match(/(\w+)\sadded\.$/);
+      const id = findId[1];
 
-    // the id is at the first
-    if (findId !== null && id) {
-      this.id = id;
+      // the id is at the first
+      if (findId !== null && id) {
+        this.id = id;
+        // save to local storage
+        this.#saveId();
+      }
+    } else {
+      this.id = game.id;
     }
   };
 
