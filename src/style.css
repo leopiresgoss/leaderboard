@@ -100,6 +100,7 @@ section {
 }
 
 .scores {
+  display: none;
   margin-top: 24px;
   border: 2px solid black;
   border-radius: 8px;
