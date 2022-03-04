@@ -109,6 +109,16 @@ section {
   border-radius: 8px;
 }
 
+.buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.reset {
+  background-color: #1a2537;
+}
+
 .scores::-webkit-scrollbar {
   width: 4px;
 }

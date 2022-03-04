@@ -8,7 +8,8 @@ const game = new Game(gameName);
 const display = new Display();
 
 const form = document.querySelector('form');
-const refreshBtn = document.querySelector('.section-head button');
+const refreshBtn = document.querySelector('.refresh');
+const resetBtn = document.querySelector('.reset');
 
 const resfreshList = async () => {
   const scores = await game.getScores();
@@ -29,6 +30,13 @@ const addScore = async (e) => {
   score.value = '';
 };
 
+const removeList = async () => {
+  await game.resetScores();
+  // to display an empty list
+  await display.displayScores([]);
+};
+
 render();
 form.addEventListener('submit', addScore);
 refreshBtn.addEventListener('click', resfreshList);
+resetBtn.addEventListener('click', removeList);

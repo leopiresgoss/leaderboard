@@ -83,4 +83,9 @@ export default class Game {
     res = await res.json();
     return res;
   };
+
+  resetScores = async () => {
+    localStorage.removeItem('leaderboardGame');
+    await this.start();
+  }
 }
