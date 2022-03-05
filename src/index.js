@@ -10,6 +10,8 @@ const display = new Display();
 const form = document.querySelector('form');
 const refreshBtn = document.querySelector('.refresh');
 const resetBtn = document.querySelector('.reset');
+// const confirmBtn = document.querySelector('.confirm');
+// const rejectBtn = document.querySelector('.reject');
 
 const resfreshList = async () => {
   const scores = await game.getScores();
@@ -36,7 +38,26 @@ const removeList = async () => {
   await display.displayScores([]);
 };
 
+const confirmReset = () => {
+  const confirm = document.querySelector('.confirm');
+  confirm.addEventListener('click', async () => {
+    display.closeModal();
+    await removeList();
+  });
+};
+
+const cancelReset = () => {
+  const reject = document.querySelector('.reject');
+  reject.addEventListener('click', () => {
+    display.closeModal();
+  });
+};
+
 render();
 form.addEventListener('submit', addScore);
 refreshBtn.addEventListener('click', resfreshList);
-resetBtn.addEventListener('click', removeList);
+resetBtn.addEventListener('click', () => {
+  display.showModal();
+  confirmReset();
+  cancelReset();
+});

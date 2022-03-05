@@ -18,4 +18,23 @@ export default class Display {
   };
 
   #orderScores = (scores) => scores.sort((a, b) => b.score - a.score)
+
+  showModal = () => {
+    const modal = document.createElement('div');
+    modal.classList.add('modal-overlay');
+    modal.innerHTML = `
+    <div class="alert">
+      <h3>Do you really want to reset all scores and start a new game?</h3>
+      <div class="buttons">
+          <button class="confirm" type="button" aria-label="reset score list">Yes</button>
+          <button class="reject" type="button" aria-label="maitain score list">No</button>
+      </div>
+    </div>
+    `;
+    document.body.appendChild(modal);
+  }
+
+  closeModal = () => {
+    document.body.removeChild(document.body.lastChild);
+  }
 }
